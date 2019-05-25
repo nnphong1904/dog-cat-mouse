@@ -1,11 +1,12 @@
 function cat(name){
+<<<<<<< HEAD
     this.name=name;
     this.dead=false;
     this.stomach=[];
 }
+=======
+>>>>>>> parent of dcee2da... Add die method for cat
 
-cat.prototype.die=function(){
-    this.dead=true;
 }
 
 cat.prototype.eat(mouse)=function(){
