@@ -1,12 +1,15 @@
-function cat(name){
+var chalk=require('chalk');
 
+function Cat(name){
     this.name=name;
     this.dead=false;
     this.stomach=[];
 }
 
-cat.prototype.eat(mouse)=function(){
+Cat.prototype.eat=function(mouse){
     this.stomach.push(mouse);
 }
-
-module.export=cat;
+Cat.prototype.sayHi=function(){
+    console.log('Hi! I am a cat. My name is '+ chalk.blue(this.name))
+}
+module.exports=Cat;
